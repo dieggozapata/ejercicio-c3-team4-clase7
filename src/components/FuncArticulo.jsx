@@ -1,12 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import Articulo from './Articulo'
-const FuncArticulo = () => {
-    const [count, setCount] = useState(1)
+const FuncArticulo = () => {    
     const [lista, setLista] = useState([]);
-    const adicionarArticulo = () => {
-        setCount(count + 1)
-        setLista([...lista,count])
+    const adicionarArticulo = () => {        
+        setLista([...lista,lista.length+1])
     } 
   return (
     <>        
